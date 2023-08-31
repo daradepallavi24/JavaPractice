@@ -1,4 +1,16 @@
-package com.java.demo.intro;
+package com.demo;
+
+/*Given character: 'a'
+
+1. Initialize c = 'a'
+
+2. Check the condition:
+   (c >= 'a' && c <= 'z') is true, so proceed to the if-block.
+
+3. Print: "a is an alphabet."
+
+Final output: a is an alphabet.
+*/
 
 public class Alphabetornot {
 	 public static void main(String[] args) {
