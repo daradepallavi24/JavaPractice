@@ -1,4 +1,13 @@
-package com.java.demo.intro;
+package com.demo;
+
+/*Given number: num = 10
+
+1. Check the condition: (num % 2 == 0)
+   (10 % 2) is 0, which means the number is even.
+   Print: "Entered Number is Even."
+
+Final output: Entered Number is Even.
+*/
 
 public class OddEven {
 		 
