@@ -1,0 +1,52 @@
+package com.demo;
+public class Employee {
+    private String name;
+    private String jobTitle;
+    private double salary;
+
+    public Employee(String name, String jobTitle, double salary) {
+        this.name = name;
+        this.jobTitle = jobTitle;
+        this.salary = salary;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getJobTitle() {
+        return jobTitle;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void raiseSalary(double percentage) {
+        if (percentage > 0) {
+            double raiseAmount = salary * (percentage / 100);
+            salary += raiseAmount;
+            System.out.println(name + "'s salary has been raised by " + percentage + "%. New salary: $" + salary);
+        } else {
+            System.out.println("Invalid percentage for a raise.");
+        }
+    }
+
+    public void displayInfo() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Job Title: " + jobTitle);
+        System.out.println("Salary: Rs" + salary);
+    }
+
+    public static void main(String[] args) {
+        Employee employee1 = new Employee("Pallavi Darade", "Software Engineer", 60000.0);
+
+        System.out.println("Initial Employee Information:");
+        employee1.displayInfo();
+
+        employee1.raiseSalary(10);
+
+        System.out.println("\nUpdated Employee Information:");
+        employee1.displayInfo();
+    }
+}
