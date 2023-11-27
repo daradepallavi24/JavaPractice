@@ -32,3 +32,15 @@ public class ArrayListOperations {
         stringList.forEach(System.out::println);
     }
 }
+/*Pallavi Length: 7
+Madhukar Length: 8
+Darade Length: 6
+BE Length: 2
+
+Removed Elements:
+BE
+
+Modified ArrayList:
+Pallavi
+Madhukar
+Darade*/
